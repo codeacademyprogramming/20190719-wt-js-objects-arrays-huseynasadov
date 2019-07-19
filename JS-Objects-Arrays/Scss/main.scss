@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom,rgb(78, 74, 74),grey);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .section-form{
+        .student-form{
+            input{
+                margin: 5px 0;
+            }
+        }
+        table{
+            margin-top: 50px;
+            color:white;
+            thead{
+                th{
+                    cursor: pointer;
+                    transition: 0.5s all;
+                    &:hover{
+                        color:rgb(179, 172, 172);
+                    }
+                }
+            }
+        }
+    }
+}
+

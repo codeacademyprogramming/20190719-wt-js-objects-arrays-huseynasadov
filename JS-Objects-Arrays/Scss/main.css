@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4e4a4a), to(grey));
+  background-image: linear-gradient(to bottom, #4e4a4a, grey);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .section-form .student-form input {
+  margin: 5px 0;
+}
+
+body .section-form table {
+  margin-top: 50px;
+  color: white;
+}
+
+body .section-form table thead th {
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+body .section-form table thead th:hover {
+  color: #b3acac;
+}
+/*# sourceMappingURL=main.css.map */

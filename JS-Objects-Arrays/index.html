@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Object Array</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Scss/main.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="section-form">
+            <div class="container">
+                    
+                <div class="row">
+                    <div class="col-md-6 student-form mt-5">
+                        <input type="text" class="form-control student-input" placeholder="Name">
+                        <input type="text" class="form-control student-input" placeholder="Surname">
+                        <input type="text" class="form-control student-input" placeholder="Email">
+                        <input type="text" class="form-control student-input" placeholder="Phone">
+                        <input type="text" class="form-control student-input" placeholder="Age">
+                        <button class="btn btn-info mt-3" onclick="getInputValues()">Save</button>
+                    </div>
+                    <div class="col-md-6">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col" onclick="randomSort()">Random</th>
+                                <th scope="col" onclick="nameSort()">Name</th>
+                                <th scope="col" onclick="SurnameSort()">Surname</th>
+                                <th scope="col" onclick="emailSort()">Email</th>
+                                <th scope="col" onclick="phoneSort()">Phone</th>
+                                <th scope="col" onclick="ageSort()">Age</th>
+                              </tr>
+                            </thead>
+                            <tbody class="tBody student-list">                          
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <div class=" alert-danger col-md-6 mt-2" id="alertError">
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="JS/main.js"></script>
+</body>
+</html>
