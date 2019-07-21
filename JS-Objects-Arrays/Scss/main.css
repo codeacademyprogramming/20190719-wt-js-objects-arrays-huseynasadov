@@ -15,6 +15,10 @@ body .section-form .student-form input {
   margin: 5px 0;
 }
 
+body .section-form .student-form button {
+  font-weight: 700;
+}
+
 body .section-form table {
   margin-top: 50px;
   color: white;
@@ -22,12 +26,19 @@ body .section-form table {
 
 body .section-form table thead th {
   cursor: pointer;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
+  -webkit-transition: 0.1s all;
+  transition: 0.1s all;
 }
 
 body .section-form table thead th:hover {
-  color: #b3acac;
+  color: #17a2b8;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+body .section-form table thead th:active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 body .section-form #errors {
