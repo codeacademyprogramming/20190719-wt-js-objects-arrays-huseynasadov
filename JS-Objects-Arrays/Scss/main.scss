@@ -30,14 +30,12 @@ body{
         }
         #errors{
             position: relative;
+            p{
+                font-size: 18px;
+                margin:0;
+            }
             #alert{
                 display: none;
-                
-                p{
-                    font-size: 18px;
-                    margin-bottom: 0;
-                    margin:0;
-                }
             }
             #alert-number{
                 display: none;

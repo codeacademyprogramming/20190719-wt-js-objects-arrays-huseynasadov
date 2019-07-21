@@ -34,14 +34,13 @@ body .section-form #errors {
   position: relative;
 }
 
-body .section-form #errors #alert {
-  display: none;
+body .section-form #errors p {
+  font-size: 18px;
+  margin: 0;
 }
 
-body .section-form #errors #alert p {
-  font-size: 18px;
-  margin-bottom: 0;
-  margin: 0;
+body .section-form #errors #alert {
+  display: none;
 }
 
 body .section-form #errors #alert-number {

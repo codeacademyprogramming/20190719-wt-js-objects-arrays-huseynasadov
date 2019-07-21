@@ -10,6 +10,9 @@ function Student(name, surname, email, phone, age) {
     this.email = email,
     this.phone = phone,
     this.age = age
+    this.info = function(){
+        return `<tr><th>${index + 1}</th><td>${this.name}</td><td>${this.surname}</td><td>${this.email}</td><td>${this.phone}</td><td>${this.age}</td></tr>`
+    }
 }
 
 function generateLiItems(value, index) {
@@ -70,8 +73,13 @@ function sortedList(value) {
 
 // Random Sorted
 
-function randomSort() {
-    let random = Math.random() - 0.5;
-    students.sort(function (a, b) { return random });
+function randomSort(){
+    students.sort(myFunct());
     getWriteList();
+}
+function myFunct(){
+    let random = Math.random() - 0.5;
+    return function () {
+        return random;
+      }
 }
