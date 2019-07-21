@@ -29,4 +29,26 @@ body .section-form table thead th {
 body .section-form table thead th:hover {
   color: #b3acac;
 }
+
+body .section-form #errors {
+  position: relative;
+}
+
+body .section-form #errors #alert {
+  display: none;
+}
+
+body .section-form #errors #alert p {
+  font-size: 18px;
+  margin-bottom: 0;
+  margin: 0;
+}
+
+body .section-form #errors #alert-number {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 /*# sourceMappingURL=main.css.map */

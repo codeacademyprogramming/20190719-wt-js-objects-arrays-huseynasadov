@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,44 +9,56 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="Scss/main.css">
 </head>
+
 <body>
     <header></header>
     <main>
         <section class="section-form">
             <div class="container">
-                    
+
                 <div class="row">
                     <div class="col-md-6 student-form mt-5">
                         <input type="text" class="form-control student-input" placeholder="Name">
                         <input type="text" class="form-control student-input" placeholder="Surname">
-                        <input type="text" class="form-control student-input" placeholder="Email">
-                        <input type="text" class="form-control student-input" placeholder="Phone">
+                        <input type="email" class="form-control student-input" placeholder="Email">
+                        <input type="tel" class="form-control student-input" placeholder="Phone">
                         <input type="text" class="form-control student-input" placeholder="Age">
                         <button class="btn btn-info mt-3" onclick="getInputValues()">Save</button>
+                        <button class="btn btn-info mt-3" onclick="reset()">Clear</button>
+
                     </div>
                     <div class="col-md-6">
                         <table class="table">
                             <thead>
-                              <tr>
-                                <th scope="col" onclick="randomSort()">Random</th>
-                                <th scope="col" onclick="nameSort()">Name</th>
-                                <th scope="col" onclick="SurnameSort()">Surname</th>
-                                <th scope="col" onclick="emailSort()">Email</th>
-                                <th scope="col" onclick="phoneSort()">Phone</th>
-                                <th scope="col" onclick="ageSort()">Age</th>
-                              </tr>
+                                <tr>
+                                    <th scope="col" onclick="randomSort()">№/Random</th>
+                                    <th scope="col" onclick="sortedList('name')">Name</th>
+                                    <th scope="col" onclick="sortedList('surname')">Surname</th>
+                                    <th scope="col" onclick="sortedList('email')">Email</th>
+                                    <th scope="col" onclick="sortedList('phone')">Phone</th>
+                                    <th scope="col" onclick="sortedList('age')">Age</th>
+                                </tr>
                             </thead>
-                            <tbody class="tBody student-list">                          
+                            <tbody class="tBody student-list">
                             </tbody>
-                          </table>
+                        </table>
                     </div>
                 </div>
-                <div class=" alert-danger col-md-6 mt-2" id="alertError">
+                <div id ="errors">
+                    <div class="alert alert-danger col-md-6 mt-4" id="alert">
+                        <p class="alert-error"> Please, Fill all calls !!!</p>
                     </div>
+                    <div class="alert alert-danger col-md-6 mt-4" id="alert-number">
+                        <p class="alert-error-number"> Please, put number !!!</p>
+                    </div>
+                </div>
+
+
             </div>
         </section>
     </main>
     <footer></footer>
     <script src="JS/main.js"></script>
 </body>
+
 </html>
