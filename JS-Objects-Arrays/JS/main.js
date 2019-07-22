@@ -30,9 +30,9 @@ function reset() {
     document.getElementById("alert-number").style.display = "none";
 }
 
-function getInputValues(value) {
+function getInputValues() {
 
-    let student = new Student(inputs[0].value, inputs[1].value, inputs[2].value, inputs[3].value, inputs[4].value);
+    let student = new Student(inputs[0].value.toUpperCase(), inputs[1].value.toUpperCase(), inputs[2].value.toUpperCase(), inputs[3].value, inputs[4].value);
     if (inputs[0].value && inputs[1].value && inputs[2].value && inputs[3].value && inputs[4].value) {
         if(inputs[4].value > 0){
         students.push(student);
